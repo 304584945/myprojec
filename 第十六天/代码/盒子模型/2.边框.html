@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>边框</title>
+    <style>
+
+        #box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /*
+            边框：border:
+            边框大小
+            边框样式：solid(实线)  dotted(点状线)   dashed(虚线)   double(双实线)
+            边框会改变盒子的大小，但是内容区域不改变
+            */
+            /*border: 2px solid blue;*/
+
+
+            /*border-top: 1px solid blue   上边框 */
+            /*border-bottom: 1px solid blue   下边框 */
+            /*border-left: 1px solid blue   左边框 */
+            /*border-right: 1px solid blue   右边框 */
+
+            /* border-radius:定义圆角边框
+            传一个参数：盒子的四个角都变化。
+            传两个参数：左上右下    左下右上
+            传三个参数：左上   左下右上   右下
+            传四个参数：左上   右上   右下   左下（顺时针）
+            */
+            /*border-radius: 20px 40px 60px 80px;*/
+
+            /* 定义圆形：border-radius: 50% */
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+<div id="box"></div>
+</body>
+</html>

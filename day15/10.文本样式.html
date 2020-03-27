@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本样式</title>
+
+</head>
+<body>
+<style>
+        /* letter-spacing：字符与字符之间的距离 */
+        /*p{*/
+        /*    letter-spacing: 20px;*/
+        /*}*/
+
+        /* word-spacing :单词与单词之间的距离 */
+        /*p{*/
+        /*    word-spacing: 30px;*/
+        /*}*/
+
+        /*
+        text-align:center居中  left居左  right居右
+        如果该标签是块级标签或者设置了宽度的行内块标签才会起作用
+        原因：块级标签占用一行
+        */
+       p{
+            width: 100px;
+            /*text-align: center;*/
+            /*text-align: right;*/
+            /*text-align: left;*/
+        }
+        span{
+            width: 100px;
+            height: 200px;
+            text-align: center;
+        }
+<!--        a标签通常使用text-decoration去掉下滑线-->
+<!-- line-height:行高 通常用于文本的垂直居中-->
+
+p   {
+width:300px;
+height:200px;
+background-color:blue;
+text-align:center;
+line-height:300px;
+}
+    </style>
+<!--<p>这是测试letter-spacing的p标签</p>-->
+<!--<p>word spacing</p>-->
+<p>这是测试text-align的P标签</p>
+
+<!--<p>这是p标签</p>-->
+<span>这是span标签</span>
+<span>这是span标签</span>
+</body>
+</html>

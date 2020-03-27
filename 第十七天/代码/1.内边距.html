@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内边距</title>
+    <style>
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            /*
+            内边距：padding  会改变盒子大小，但是，盒子的内容区域大小不会改变
+            传一个参数：上下左右
+            传两个参数：上下   左右
+            传三个参数：上   左右   下
+            传四个参数：顺时针
+            */
+            /*padding:10px 50px 100px 200px;*/
+
+            /*
+            padding-top : 上内边距
+            padding-bottom : 下内边距
+            padding-left ： 左内边距
+            padding-right ： 右内边距
+            */
+            /*padding-top: 100px;*/
+            /*padding-left: 100px;*/
+        }
+
+        /*
+        padding对于行内元素是存在效果的
+        */
+        span{
+            padding:100px ;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+<div class="box">这是一个div标签</div>
+<span>这是一个span行内元素</span>
+</body>
+</html>

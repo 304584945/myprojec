@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>行内元素外边距问题</title>
+    <style>
+        .s1{
+            border: 1px solid blue;
+            margin-left: 300px;
+            margin-top: 300px;
+
+            /*
+            行内元素无法居中
+            */
+            /*margin: 0 auto;*/
+        }
+
+    </style>
+</head>
+<body>
+<!--
+行内元素：只有左右外边距，没有上下外边距
+块级和行内块元素都可以设置上下左右外边距
+-->
+<span class="s1">这是第一个span</span>
+</body>
+</html>

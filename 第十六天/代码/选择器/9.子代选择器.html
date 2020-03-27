@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>子代选择器</title>
+    <style>
+
+        /*
+        子代选择器：
+        格式:选择器>选择器{样式属性:属性值}
+        子代选择器只能够选中它的亲生孩子,孙子之类的选不到
+        */
+
+        #u1>li {
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+<ul id="u1">
+    <li>这是第一个li
+        <ul>
+            <li>这是里面的li标签</li>
+            <li>这是里面的li标签</li>
+        </ul>
+    </li>
+    <li>这是第二个li</li>
+    <li>这是第三个li</li>
+    <li>这是第四个li</li>
+    <li>这是第五个li</li>
+</ul>
+</body>
+</html>

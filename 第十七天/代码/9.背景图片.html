@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景图片</title>
+    <style>
+
+        #box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /*
+            插入背景图片：background-image
+            */
+            background-image: url("./2.jpg");
+
+            /*
+            改变背景图片的大小:background-size
+            传两个参数：宽度   高度
+            传一个参数：宽度   auto(默认的)
+            */
+            background-size: 100px 100px;
+            /*background-size: 100px;*/
+
+            /*
+            背景图片平铺：background-repeat:
+            值：
+            no-repeat(不平铺)   repeat-x(横向平铺)
+              repeat-y(纵向平铺)  repeat(x轴y轴都进行平铺,是默认值)
+            */
+            background-repeat:no-repeat;
+
+            /*
+            背景图片的移动:background-position
+            传两个参数：距左侧的距离   距上方的距离
+            传一个参数：距左侧距离   auto
+            传50%和center：使背景图片水平和垂直居中显示
+            */
+            /*background-position:center;*/
+        }
+
+    </style>
+</head>
+<body>
+<!--
+背景图片不占有位置，插入图片占有位置
+-->
+<div id="box">
+    这是一个div标签
+</div>
+</body>
+</html>

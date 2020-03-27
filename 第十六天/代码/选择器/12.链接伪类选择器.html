@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>链接伪类选择器</title>
+    <style>
+
+        /*
+        链接伪类选择器：
+        l  :link         链接没有访问时更改的样式
+        访问指的是浏览器的浏览记录如果有就代表访问过了
+        v  :visited      链接访问过后更改的样式
+        h  :hover        鼠标移入更改的样式
+        a  :active       选定链接时更改的样式
+        选定指的是鼠标选中更改的样式
+        顺序不能乱
+        */
+        a:link {
+            color: yellow;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:hover {
+            color: darkmagenta;
+            font-size: 30px;
+        }
+
+        a:active {
+            color: chartreuse;
+        }
+
+        p:hover{
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+<a href="https://www.baidu.com">百度一下，你就知道</a>
+<p>这是一个P标签</p>
+</body>
+</html>

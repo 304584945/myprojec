@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form表单</title>
+</head>
+<body>
+<!--
+form：表单标签   主要是网后台传数据    双标签
+属性：
+action：表单数据提交的地址
+method：表单数据提交的方式：get/post
+get(会把提交的数据显示在地址栏里面，不安全)
+post(不会把提交的数据显示在地址栏里，安全)
+-->
+<form action="" method="post">
+<!--
+input标签：单标签
+属性：
+type属性值：
+    1.text    文本框（默认值）
+    2.password   文本框(对文本进行掩码)
+    3.date    日期类型
+    4.file    文件类型
+    5.radio   单选按钮   如果想要实现单选功能，必须保证这一类的单选按钮中的name属性值一样
+    6.checkbox   复选框  如果想要实现多选功能，必须保证复选框的name是一样的
+    7.button   普通按钮(是没有功能的，使用JS给按钮添加功能)
+    8.submit   提交按钮   点击它会将from表单的数据提交到后台
+    9.reset    重置按钮
+    10.hidden   隐藏域   看不见，但是在进行form表单提交时，会提交其中的数据
+-->
+    用户名：<input type="text" placeholder="用户名/邮箱/手机号"> <br>
+    密码：<input type="password" placeholder="密码"> <br>
+    日期：<input type="date"> <br>
+    文件：<input type="file"> <br>
+    性别：<input type="radio" name="sex">男   <input type="radio" name="sex">女 <br>
+    爱好：<input type="checkbox" name="aihao">唱 <input type="checkbox" name="aihao">跳 <input type="checkbox" name="aihao">rap <input type="checkbox" name="aihao">篮球
+    <br>
+    普通按钮：<input type="button"> <br>
+    登录：<input type="submit"> <br>
+    重置：<input type="reset"> <br>
+    <input type="hidden" > <br>
+<!--
+select：下拉选框    必须和option标签进行结合使用
+默认选择第一个option标签，可以使用selected更改默认选项
+-->
+    城市：<select name="" id="">
+                <option value="">广州</option>
+                <option value="" selected>北京</option>
+                <option value="">上海</option>
+                <option value="">深圳</option>
+         </select>
+</form>
+
+</body>
+</html>

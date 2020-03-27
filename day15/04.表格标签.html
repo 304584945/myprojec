@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格标签</title>
+</head>
+<body>
+<!--
+table标签：表格标签   双标签   必须和tr(行)、td(列)进行结合使用
+border属性：设置边框
+tr：代表行  双标签
+td：代表列  双标签   可以理解为单元格
+-->
+<!--<table border="1px">-->
+<!--    <tr>-->
+<!--        <td>这是第一个tr的第一个td</td>-->
+<!--        <td>这是第一个tr的第二个td</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>这是第二个tr的第一个td</td>-->
+<!--        <td>这是第二个tr的第二个td</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>这是第三个tr的第一个td</td>-->
+<!--        <td>这是第三个tr的第二个td</td>-->
+<!--    </tr>-->
+<!--</table>-->
+
+<!--
+table>tr*4>td*2 : 创建4行2列的表格
+-->
+<!--
+table属性：
+cellspacing:代表单元格和单元格之间的距离
+cellpadding:代表单元格和字之间的距离
+align:center    表格居中显示
+-->
+<!--<table border="1px" cellspacing="10px" cellpadding="20px" align="center">-->
+<!--    <tr>-->
+<!--        <td>姓名</td>-->
+<!--        <td>成绩</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>张三三</td>-->
+<!--        <td>90</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>李四</td>-->
+<!--        <td>100</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>卡不拉提</td>-->
+<!--        <td>20</td>-->
+<!--    </tr>-->
+<!--</table>-->
+
+<!--
+td属性：
+rowspan：合并行
+colspan: 合并列
+-->
+<table border="1px" cellspacing="5px" cellpadding="10px">
+    <tr>
+        <td colspan="5" align="center">2020考试成绩榜</td>
+    </tr>
+    <tr>
+        <td>姓名</td>
+        <td>数学成绩</td>
+        <td>英语成绩</td>
+        <td>物理成绩</td>
+        <td>所在班级</td>
+    </tr>
+    <tr>
+        <td>张三三</td>
+        <td>90</td>
+        <td>20</td>
+        <td>30</td>
+        <td rowspan="2">四年一班</td>
+    </tr>
+    <tr>
+        <td>李四</td>
+        <td>80</td>
+        <td>23</td>
+        <td>21</td>
+
+    </tr>
+    <tr>
+        <td>卡布拉提</td>
+        <td>90</td>
+        <td>23</td>
+        <td>11</td>
+        <td rowspan="2">四年二班</td>
+    </tr>
+    <tr>
+        <td>王五</td>
+        <td>30</td>
+        <td>40</td>
+        <td>90</td>
+    </tr>
+</table>
+</body>
+</html>

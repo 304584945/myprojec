@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>清除内外边距</title>
+    <style>
+
+        /*
+        清除内外边距
+        */
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        #box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        p{
+            margin-top: 100px;
+        }
+
+
+    </style>
+</head>
+<body>
+<!--
+为什么要清除内外边距？
+原因是：有一些标签，自带外边距或者内边距，影响我们的布局，如果想要添加内外边距，覆盖即可。
+-->
+<div id="box"></div>
+<p>这是一个P标签</p>
+</body>
+</html>

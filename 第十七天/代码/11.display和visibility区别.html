@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>display和visibility区别</title>
+    <style>
+
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        #box1{
+            background-color: red;
+            /*display: none;*/
+            visibility: hidden;
+        }
+        #box2{
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+
+<!--
+display:none   使元素消失，但是元素消失后不占有位置
+visibility:hidden   使元素隐藏，隐藏后的元素占有位置
+-->
+
+<div id="box1"></div>
+<div id="box2"></div>
+</body>
+</html>

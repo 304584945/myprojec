@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>类选择器</title>
+    <style>
+        /*
+        类选择器格式：.类名 {样式属性:属性值}
+        会选中所有符合类名的标签，不关注标签，只关注类名
+        */
+        .class_blue{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<!--
+使用类选择器，需要给标签定义类
+只需要给标签加class属性
+注：类名可以重复
+-->
+<p class="class_blue">这是一个p标签</p>
+<p>这是一个p标签</p>
+<p>这是一个p标签</p>
+<h1 class="class_blue">这是一个h1标签</h1>
+</body>
+</html>

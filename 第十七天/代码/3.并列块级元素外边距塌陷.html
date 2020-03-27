@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>并列块级元素外边距塌陷</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        .box1 {
+            background-color: red;
+            margin-bottom: 100px;
+        }
+        .box2{
+            background-color: cornflowerblue;
+            /*margin-top: 100px;*/
+        }
+
+    </style>
+</head>
+<body>
+<!--
+并列块级元素外边距塌陷问题：并列的块级元素同方向上都设置了外边距，会以最大的外边距为准
+解决方法:避免    只给其中的一个盒子加上外边距即可
+-->
+<div class="box1"></div>
+<div class="box2"></div>
+</body>
+</html>

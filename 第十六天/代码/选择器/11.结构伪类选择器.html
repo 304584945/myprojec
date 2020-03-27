@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>结构伪类选择器</title>
+    <style>
+        /* first-child：选中第一个孩子 */
+        /*ul li:first-child{*/
+        /*    color: red;*/
+        /*}*/
+
+        /* last-child:选中最后一个孩子 */
+        /*ul li:last-child{*/
+        /*    color: orange;*/
+        /*}*/
+
+        /* nth-child(n): 选中第几个孩子  n是一个数字 */
+        /*ul li:nth-child(5){*/
+        /*    color: blue;*/
+        /*}*/
+
+        /* nth-child(2n+1) 选择奇数个 */
+        /*ul li:nth-child(2n+1) {*/
+        /*    color: darkmagenta;*/
+        /*}*/
+
+        /*ul li:nth-child(odd){*/
+        /*    color: aqua;*/
+        /*}*/
+
+
+        /* nth-child(2n) 选择偶数个 */
+        /*ul li:nth-child(2n){*/
+        /*    color: yellowgreen;*/
+        /*}*/
+
+        ul li:nth-child(even){
+            color: deeppink;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>这是第一个li标签</li>
+    <li>这是第二个li标签</li>
+    <li>这是第三个li标签</li>
+    <li>这是第四个li标签</li>
+    <li>这是第五个li标签</li>
+    <li>这是第六个li标签</li>
+</ul>
+</body>
+</html>

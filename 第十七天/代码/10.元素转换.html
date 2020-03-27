@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>元素转换</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            /*
+            display:元素转换
+            值：
+            inline：转换成行内元素
+            inline-block:转换成行内块元素
+            none:使元素消失
+            block：转换成块级元素
+            */
+            /*display: none;*/
+        }
+        #box1{
+            background-color: red;
+        }
+        #box2{
+            background-color: blue;
+        }
+
+        span{
+            border: 1px solid red;
+            display: block;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<!--
+元素转换指的是：行内元素、块级元素、行内块元素之间的转换
+转换成什么类型的元素，就具有了该类型元素的性质
+行内元素：不独占一行，不能够设置宽和高
+块级元素：独占一行，可以设置宽和高
+行内块元素：不独占一行，可以设置宽和高
+-->
+<div id="box1">这是第一个div</div>
+<div id="box2">这是第二个div</div>
+<span>这是一个span标签</span>
+<span>这是一个span标签</span>
+</body>
+</html>
